@@ -69,10 +69,6 @@ var Weather = React.createClass({
 
     request.send();
   },
-  // componentDidMount: function(){
-  //   this.setState({ location: navigator.geolocation.getCurrentPosition(this.locationSuccess, this.locationError)});
-  //   console.log(this.state.location);
-  // },
 
   render: function () {
     return (

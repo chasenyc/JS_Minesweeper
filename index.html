@@ -4,6 +4,7 @@
     <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
     <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
     <script src='./autocomplete.js' type="text/jsx"></script>
+    <script src='./tabs.js' type="text/jsx"></script>
     <script src='./weather-clock.js' type="text/jsx"></script>
     <meta charset="utf-8">
     <title></title>
@@ -18,6 +19,10 @@
   </figure>
 
   <figure id="weather">
+
+  </figure>
+
+  <figure id="tabs">
 
   </figure>
 
@@ -41,6 +46,14 @@
     React.render(
       <Weather />,
       document.getElementById("weather")
+    );
+  </script>
+
+  <script type="text/jsx">
+    var tabularData = [{title: 'work', content: 'play'},{title: 'title2', content: 'content2'},{title: 'title3', content: 'content3'}]
+    React.render(
+      <Tabs tabularData={tabularData}/>,
+      document.getElementById("tabs")
     );
   </script>
 
