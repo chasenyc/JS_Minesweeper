@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+    <script src='./autocomplete.js' type="text/jsx"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <figure id="autocomplete">
+
+  </figure>
+  <script type="text/jsx">
+    React.render(
+      <AutoComplete  names={['alex', 'alexandra', 'andrew', 'alec', 'aaron']}/>,
+      document.getElementById("autocomplete")
+    );
+  </script>
+  </body>
+</html>
