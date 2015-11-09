@@ -1,0 +1,40 @@
+body, div, h1, ul {
+  font: inherit;
+  text-decoration: inherit;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  background: transparent;
+}
+body {
+
+}
+figure {
+  display: block;
+  background: lightgray;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+div {
+  font-size: 30px;
+  background: lightgray;
+  border-style: inset;
+  display: inline;
+  margin: auto;
+}
+
+div:nth-child(10):after {
+  content: "\A";
+  white-space: pre;
+}
+
+tile {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+}

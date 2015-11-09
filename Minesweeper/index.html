@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+    <script src='./minesweeper.js' type="text/jsx"></script>
+    <script src='./application.js' type="text/jsx"></script>
+    <link rel="stylesheet" type="text/css" href="./application.css" >
+    <meta charset="utf-8">
+    <title>minesweeper</title>
+  </head>
+  <body>
+      <figure id="game"></figure>
+
+      <script type="text/jsx">
+        function myGlobalRender() {
+          React.render(
+            <Game update={ myGlobalRender } />,
+            document.getElementById('game')
+          );
+        }
+        myGlobalRender();
+      </script>
+  </body>
+</html>

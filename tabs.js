@@ -30,7 +30,4 @@ var Tabs = React.createClass ({
     }
   },
 
-  componentDidMount: function () {
-
-  }
 });
